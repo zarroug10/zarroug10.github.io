@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin: 0;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #3E4095;
+    border-bottom: 2px solid #3E4095;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.left-column, .right-column {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    page-break-inside: avoid;
+}
+
+.left-column {
+    width: 40%;
+    background-color: #3E4095;
+    color: #FFF;
+}
+
+.right-column {
+    width: 60%;
+    background-color: #FFF;
+}
+
+.contact-section, .education-section, .skills-section {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.experience-section, .summary-section {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.link-section {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.name {
+    text-decoration: underline;
+    display: block;
+    font-size: 28px;
+    margin: 10px 40px 10px 0;
+}
+
+.devops-label {
+    font-size: 14px;
+    color: #555;
+    margin-top: 0;
+}
+
+.professional-profile {
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content img {
+    width: 200px;
+}
+
+.prog {
+    font-size: 14px;
+    margin-right: 10px; 
+    width: 60px;
+}
+
+.Python, .React, .JavaScript, .Flutter, .HTML, .Kotlin {
+    background-color: #7F52FF;
+    text-align: right;
+    padding: 5px;
+    color: white;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.Python { width: 50%; }
+.React { width: 60%; }
+.JavaScript { width: 80%; }
+.Flutter { width: 60%; }
+.HTML { width: 90%; }
+.Kotlin { width: 40%; }
+
+.border {
+    flex-grow: 1;
+    background-color: #f3f3f3;
+    border-radius: 12px;
+}
+
+@media print {
+    /* Reset body styles */
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #333;
+    }
+
+    /* Set page margins */
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+
+    /* Adjust font size */
+    body {
+        font-size: 12px;
+        color: #333;
+    }
+
+    /* Adjust container display */
+    .container {
+        display: block;
+    }
+
+    /* Adjust column widths */
+    .left-column, .right-column {
+        width: 100%;
+        box-sizing: border-box;
+        page-break-inside: avoid;
+    }
+
+    /* Prevent page breaks inside sections */
+    .section {
+        page-break-inside: avoid;
+    }
+
+    /* Section headings */
+    h2 {
+        color: #3E4095;
+        border-bottom: 2px solid #3E4095;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* Link styles */
+    a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+    /* Hover styles for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Underline style for name */
+    .name {
+        text-decoration: underline;
+        display: block;
+        font-size: 28px;
+        margin: 10px 40px 10px 0;
+    }
+
+    /* Additional styles for devops-label */
+    .devops-label {
+        font-size: 14px;
+        color: #555;
+        margin-top: 0;
+    }
+
+    /* Italic style for professional profile */
+    .professional-profile {
+        font-size: 14px;
+        font-style: italic;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    /* Image size adjustment */
+    .header-content img {
+        width: 120px;
+        border-radius: 50%;
+    }
+
+    /* Adjust text color for left column */
+    .left-column {
+        color: #333;
+    }
+
+    /* Progress bar styles */
+    .progress-bar {
+        background-color: #7F52FF;
+        text-align: right;
+        padding: 5px;
+        color: white;
+        border-radius: 12px;
+        font-size: 12px;
+        width: 100%; /* Adjust to fit the entire container width */
+    }
+
+    /* Specific widths for progress bars */
+    .progress-bar.Python { width: 50%; }
+    .progress-bar.React { width: 60%; }
+    .progress-bar.JavaScript { width: 80%; }
+    .progress-bar.Flutter { width: 60%; }
+    .progress-bar.HTML { width: 90%; }
+    .progress-bar.Kotlin { width: 40%; }
+
+    /* Border for progress bars */
+    .border {
+        flex-grow: 1;
+        background-color: #f3f3f3;
+        border-radius: 12px;
+    }
+}
